@@ -2,12 +2,26 @@
 <html>
 <head>
 	<title>Chennard Testing</title>
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.17.0/mapbox-gl.js'></script>
+  	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.17.0/mapbox-gl.css' rel='stylesheet'>
 </head>
 <body>
 
 	<h1>Hello World</h1>
 
 	<p>Dit is een pagina test</p>
+
+	<div id="map" style="width: 400px; height: 300px" />
+
+	<script type="text/javascript">
+		mapboxgl.accesToken = "pk.eyJ1IjoiY2hlbm5hcmQiLCJhIjoiSW5paGFXdyJ9.GeeKy4NWLyxWng7_z-s-Lg";
+		var map = new mapboxgl.Map({
+			container: "map",
+			style: "mapbox://styles/mapbox/streets-v8"
+		})	
+	</script>
+
+
 
 </body>
 </html>
